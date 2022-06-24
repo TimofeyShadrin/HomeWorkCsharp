@@ -2,12 +2,11 @@
 { class Program 
     { static void Main(string[] args) 
         { 
-            //Задача 6: Напишите программу, которая на вход принимает число и 
-            //выдаёт, является ли число чётным (делится ли оно на два без остатка).
+            //Задача 8: Напишите программу, которая на вход принимает число (N), а 
+            //на выходе показывает все чётные числа от 1 до N.
 
-            // 4 -> да
-            // -3 -> нет
-            // 7 -> нет
+            // 5 -> 2, 4
+            // 8 -> 2, 4, 6, 8
 
             Console.Clear();
 
@@ -15,17 +14,19 @@
             // получаем число
             int number = Convert.ToInt32(Console.ReadLine());
 
-            if (number % 2 == 0)
+            int count = 1;
+            Console.WriteLine($"These even numbers range from 1 to your number {number}: ");
+
+            while (count <= number)
             {
-            //Вывод результата
-            Console.WriteLine($"Your number {number} is even");
+                if (count % 2 == 0)
+                {
+                    //Вывод результата
+                    Console.WriteLine(count);
+                }
+                count++;
             }
-            
-            else
-            {
-            //Вывод результата
-            Console.WriteLine($"Your number {number} is odd");
-            }
+
         } 
     } 
 } 
