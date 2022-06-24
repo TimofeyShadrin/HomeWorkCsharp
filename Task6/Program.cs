@@ -11,7 +11,7 @@
 
             Console.Clear();
 
-            Console.WriteLine("Input value number: ");
+            Console.WriteLine("Input value: ");
             // получаем число
             int number = Convert.ToInt32(Console.ReadLine());
 
