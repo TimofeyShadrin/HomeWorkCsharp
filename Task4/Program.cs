@@ -20,7 +20,7 @@
             int number2 = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Input value number three: ");
-            //Получаем второе число
+            //Получаем третье число
             int number3 = Convert.ToInt32(Console.ReadLine());
             
             int max = number1;
