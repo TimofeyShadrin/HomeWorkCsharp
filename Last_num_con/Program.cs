@@ -1,4 +1,4 @@
-﻿char[] values (string text)
+﻿char[] values (string text) //метод для преоброзования строки в массив символов
 {
     char[] values = {'a'};
     int index = 0;
@@ -12,7 +12,7 @@
     return values;
 }
 
-int[] data (string text)
+int[] data (string text) //метод для вытягивания цифр из строги и создания из них массива типа int[]
 {
     int[] data = {0};
     int index = 0;
