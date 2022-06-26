@@ -92,7 +92,7 @@ void PrintArrayInt(int[] col) // метод для вывода массива �
 
 Console.Clear();
 Console.Write($"Ведите пожалуйста целое трехзначное число: ");
-string? input = Console.ReadLine();
+string? input = Convert.ToString(Console.ReadLine());
 
 if (input != "")
 {
