@@ -12,9 +12,9 @@
     return values;
 }
 
-int[] data (string text) //метод для вытягивания цифр из строги и создания из них массива типа int[]
+int[] data (string text) //метод для вытягивания цифр из строки и создания из них массива типа int[]
 {
-    int[] data = {0};
+    int[] data = new int[1];
     int index = 0;
     
     foreach (char c in text)
@@ -94,7 +94,9 @@ Console.Clear();
 Console.Write($"Ведите пожалуйста целое трехзначное число: ");
 string? input = Convert.ToString(Console.ReadLine());
 
-if (input != "")
+try
+{
+    if (input != "")
 {
 char[] collection = values(input);
 Console.WriteLine();
@@ -112,9 +114,16 @@ Console.WriteLine();
 Console.WriteLine($" Это: {numbers[numbers.Length - 2]}");
 Console.WriteLine();
 }
-else
+    else
 {
     Console.WriteLine();
     Console.WriteLine("Вы ничего не ввели!");
+    Console.WriteLine();
+}
+}
+catch (System.Exception)
+{
+    Console.Clear();
+    Console.WriteLine("Вы не ввели ни одной цифры");
     Console.WriteLine();
 }
