@@ -1,16 +1,16 @@
-﻿char[] values (string text) //метод для преоброзования строки в массив символов
-{
-    char[] values = {'a'};
-    int index = 0;
-    foreach (char c in text)
-    {
-        values[index] = c;
-        index++;
-        Array.Resize (ref values, index + 1);
-    }
-    Array.Resize (ref values, index);
-    return values;
-}
+﻿// char[] values (string text) //метод для преоброзования строки в массив символов
+// {
+//     char[] values = {'a'};
+//     int index = 0;
+//     foreach (char c in text)
+//     {
+//         values[index] = c;
+//         index++;
+//         Array.Resize (ref values, index + 1);
+//     }
+//     Array.Resize (ref values, index);
+//     return values;
+// }
 
 int[] data (string text) //метод для вытягивания цифр из строки и создания из них массива типа int[]
 {
@@ -96,9 +96,9 @@ string? input = Convert.ToString(Console.ReadLine());
 
 try
 {
-    if (input != "")
+    if (input != "" && !string.IsNullOrEmpty(input))
 {
-char[] collection = values(input);
+char[] collection = input.ToString().ToCharArray();
 Console.WriteLine();
 Console.WriteLine("Вы ввели следующие символы, проверьте!");
 PrintArrayChar(collection);
