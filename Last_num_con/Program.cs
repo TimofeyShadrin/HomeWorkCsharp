@@ -1,18 +1,4 @@
-﻿// char[] values (string text) //метод для преоброзования строки в массив символов
-// {
-//     char[] values = {'a'};
-//     int index = 0;
-//     foreach (char c in text)
-//     {
-//         values[index] = c;
-//         index++;
-//         Array.Resize (ref values, index + 1);
-//     }
-//     Array.Resize (ref values, index);
-//     return values;
-// }
-
-int[] data (string text) //метод для вытягивания цифр из строки и создания из них массива типа int[]
+﻿int[] data (string text) //метод для вытягивания цифр из строки и создания из них массива типа int[]
 {
     int[] data = new int[0];
     int index = 0;
