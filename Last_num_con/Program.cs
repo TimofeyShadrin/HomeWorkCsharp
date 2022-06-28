@@ -21,7 +21,7 @@ int[] data (string text) //метод для вытягивания цифр и�
     {
         if (c == '0' || c == '1')
         {
-            data[index] = c - '0';
+            data[index] = Convert.ToInt32(c.ToString());
             index++;
             Array.Resize (ref data, index + 1);
         }
